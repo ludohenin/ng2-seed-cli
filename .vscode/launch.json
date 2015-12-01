@@ -5,9 +5,9 @@
 			"name": "Launch cmp",
 			"type": "node",
 			"request": "launch",
-			"program": "index.js",
+			"program": "ng2-seed.js",
 			"stopOnEntry": false,
-			"args": ["cmp test/components/blog"],
+			"args": ["new", "--help"],
 			"cwd": ".",
 			"runtimeExecutable": null,
 			"runtimeArgs": [

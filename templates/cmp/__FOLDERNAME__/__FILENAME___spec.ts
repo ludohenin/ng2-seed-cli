@@ -19,12 +19,12 @@ export function main() {
 
     it('should work',
       injectAsync([TestComponentBuilder], (tcb: TestComponentBuilder) => {
-        return tcb.overrideTemplate(TestComponent, '<div <%= SELECTOR %>></div>')
+        return tcb.overrideTemplate(TestComponent, '<div><<%= SELECTOR %>></<%= SELECTOR %>></div>')
           .createAsync(TestComponent)
           .then((rootTC) => {
             rootTC.detectChanges();
-            let appDOMEl = rootTC.debugElement.componentViewChildren[0].nativeElement;
-            expect(DOM.querySelectorAll(appDOMEl, '[<%= SELECTOR %>]')[0]).toBeDefined();
+            let cmpDOMEl = rootTC.debugElement.componentViewChildren[0].nativeElement;
+            expect(DOM.querySelectorAll(cmpDOMEl, '<%= SELECTOR %>')[0]).toBeDefined();
           });
       }));
   });

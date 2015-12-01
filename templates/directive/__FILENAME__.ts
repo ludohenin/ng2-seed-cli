@@ -1,6 +1,6 @@
 import {Directive} from 'angular2/angular2';
 
 @Directive({
-  selector: '[<%= TARGET_NAME %>]'
+  selector: '[<%= SELECTOR %>]'
 })
-export class <%= TARGET_CLASS %> {}
+export class <%= CLASS_NAME %> {}

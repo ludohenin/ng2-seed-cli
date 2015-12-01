@@ -1,7 +1,7 @@
-import {<%= TARGET_CLASS %>} from './<%= FILENAME %>';
+import {<%= CLASS_NAME %>} from './<%= FILE_NAME %>';
 
 export function main() {
-  describe('<%= TARGET_CLASS %>', () => {
+  describe('<%= CLASS_NAME %>', () => {
     it('should work', () => {
       // ...
     });
