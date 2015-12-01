@@ -1,0 +1,24 @@
+{
+  "name": "ng2-seed-cli",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "commander": "^2.9.0",
+    "gulp": "^3.9.0",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-template": "^3.1.0",
+    "through2": "^2.0.0",
+    "ts-node": "^0.5.4",
+    "tsd": "^0.6.5"
+  },
+  "bin": {
+    "ng2-seed": "./bin/index.js"
+  }
+}
