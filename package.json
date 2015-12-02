@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "tsd install && tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "tsc -w"
   },
-  "author": "",
+  "author": "Ludovic Henin <ludovic.henin@yahoo.com>",
   "license": "MIT",
   "dependencies": {
     "colors": "^1.1.2",
@@ -16,10 +18,12 @@
     "gulp-load-plugins": "^1.1.0",
     "gulp-template": "^3.1.0",
     "through2": "^2.0.0",
-    "ts-node": "^0.5.4",
     "tsd": "^0.6.5"
   },
   "bin": {
     "ng2-seed": "./bin/index.js"
+  },
+  "devDependencies": {
+    "typescript": "^1.7.3"
   }
 }
