@@ -1,29 +1,17 @@
-{
-  "name": "ng2-seed-cli",
-  "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "postinstall": "tsd install && tsc",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "tsc -w"
-  },
-  "author": "Ludovic Henin <ludovic.henin@yahoo.com>",
-  "license": "MIT",
-  "dependencies": {
-    "colors": "^1.1.2",
-    "commander": "^2.9.0",
-    "extend": "^3.0.0",
-    "gulp": "^3.9.0",
-    "gulp-load-plugins": "^1.1.0",
-    "gulp-template": "^3.1.0",
-    "through2": "^2.0.0",
-    "tsd": "^0.6.5"
-  },
-  "bin": {
-    "ng2-seed": "./bin/index.js"
-  },
-  "devDependencies": {
-    "typescript": "^1.7.3"
-  }
-}
+import {readFileSync} from 'fs';
+
+export const content_repo_1_pck = {
+  'name': 'package.json',
+  'content': readFileSync(`${__dirname}/package_files/repo_1.json`).toString('base64'),
+  'encoding': 'base64',
+};
+export const content_repo_2_pck = {
+  'name': 'package.json',
+  'content': readFileSync(`${__dirname}/package_files/repo_2.json`).toString('base64'),
+  'encoding': 'base64',
+};
+export const content_repo_3_pck = {
+  'name': 'package.json',
+  'content': readFileSync(`${__dirname}/package_files/repo_3.json`).toString('base64'),
+  'encoding': 'base64',
+};
